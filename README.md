@@ -67,6 +67,7 @@ let's start with setting up our database and ORM following those [steps](https:/
 Apply some validation rules on your account model.
 
 The `username` should be `required` and can't be `null`.
+
 Give `funds` a default value of `0`.
 
 ### 🌶 Vip Accounts
