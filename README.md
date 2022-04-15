@@ -4,7 +4,7 @@ In this task, you will connect your Banking API with a database and perform the 
 
 ## Instructions
 
-- If you need a starting point, fork and clone [this repository](https://github.com/JoinCODED/Task-Express-M1-Intro-Crud-Banks/tree/solution) to your `Development` folder.
+- If you need a starting point, fork and clone [this repository](https://github.com/JoinCODED/Task-Express-M2-Sql-Banks) to your `Development` folder.
 
 ## Steps
 
