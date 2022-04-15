@@ -5,11 +5,11 @@ const {
   accountUpdate,
   accountDelete,
   accountCreate,
-  getAccountByUsername,
+  getAccountsByFund,
 } = require('./accounts.controllers');
 
 router.get('/', accountsGet);
-router.get('/:username', getAccountByUsername);
+router.get('/:fund', getAccountsByFund);
 router.post('/', accountCreate);
 
 router.delete('/:accountId', accountDelete);
