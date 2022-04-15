@@ -12,8 +12,8 @@ let's start with setting up our database and ORM following those [steps](https:/
 
 ### Create your Model
 
-1. In your models folder, create a file called Task.js, make sure it starts with a capital letter.
-2. Create your `Task` function and pass it `sequelize` and `DataTypes`.
+1. In your models folder, create a file called `Account.js`, make sure it starts with a capital letter.
+2. Create your `Account` function and pass it `sequelize` and `DataTypes`.
 3. Check your fields in your dummy database, and create your fields in the init method to mirror your dummy database's fields. Don't forget to give every field a type.
 4. Don't forget to export your model.
 5. In `app.js`, replace the `.authenticate()` method with `.sync()`.
@@ -33,7 +33,7 @@ let's start with setting up our database and ORM following those [steps](https:/
 5. In `catch`, set the response status code to `500` and return the error message as a `JSON` response.
 6. Test your route in `Postman`.
 
-### Product Create
+### Account Create
 
 1. Make your `Account` Create route function `asynchronous` and add a `try-catch block`.
 2. Pass the request's body to the sequelize method `.create()` . Keep in mind that this method is asynchronous. Hint hint: `await`.
@@ -42,7 +42,7 @@ let's start with setting up our database and ORM following those [steps](https:/
 5. In `catch`, set the response status code to `500` and return the error message as a `JSON` response.
 6. To test your new method, create a new account in `Postman`. Then check if it was added in your `tablePlus` page.
 
-### Update Product Route
+### Update Account Route
 
 1. Make your `Account` Update route function `asynchronous` and add a `try-catch block`.
 2. Pass the `accountId` from your route parameter to `.findByPk()` method and save it in a variable called `foundAccount`.
@@ -51,7 +51,7 @@ let's start with setting up our database and ORM following those [steps](https:/
 5. If it doesn't exist set the response status code to `404` and return an error message stating that this account doesn't exist as a `JSON` response.
 6. In the `catch` block, set the response status code to `500` and return the error message as a `JSON` response.
 
-### Product Delete
+### Account Delete
 
 1. Make your `Account` Delete route function `asynchronous` and add a `try-catch` block.
 2. Pass the `accountId` from your route parameter to `.findByPk()` method and save it in a variable called `foundAccount`.
